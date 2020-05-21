@@ -7,13 +7,13 @@
         android:id="@+id/mainScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/holo_orange_light">
+        android:background="@android:color/holo_purple">
 
         <LinearLayout
             android:id="@+id/form_frame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/holo_orange_light"
+            android:background="@android:color/holo_purple"
             android:orientation="vertical">
 
             <FrameLayout
