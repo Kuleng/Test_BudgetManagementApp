@@ -5,6 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".BudgetFragment" >
 
+    <data>
+        <variable
+            name="user_data"
+            type="com.example.git_budgetmanagementapp.UserData"
+            />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
@@ -16,7 +23,7 @@
             android:layout_width="140dp"
             android:layout_height="53dp"
             android:gravity="center_horizontal"
-            android:text="Your name"
+            android:text="@={user_data.name}"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="0.0"
+            android:text="@={user_data.budget}"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"

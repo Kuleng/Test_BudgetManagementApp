@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BudgetManagementApp</string>
+    <string name="app_name">GIT_budgetManagementApp</string>
     <string name="your_name">Your Name</string>
     <string name="enter_name">Enter name</string>
     <string name="change_name">Change Name</string>

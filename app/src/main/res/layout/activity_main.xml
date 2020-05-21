@@ -22,8 +22,8 @@
 
                 <fragment
                     android:id="@+id/budget_fragment"
-                    android:name="com.example.budgetmanagementapp.BudgetFragment"
-                    class="com.example.budgetmanagementapp.BudgetFragment"
+                    android:name="com.example.git_budgetmanagementapp.BudgetFragment"
+                    class="com.example.git_budgetmanagementapp.BudgetFragment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:layout="@layout/budget_fragment"
@@ -39,7 +39,7 @@
 
                 <fragment
                     android:id="@+id/form_fragment"
-                    android:name="com.example.budgetmanagementapp.FormFragment"
+                    android:name="com.example.git_budgetmanagementapp.FormFragment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:layout="@layout/form_fragment"
@@ -60,7 +60,7 @@
 
                     <fragment
                         android:id="@+id/expense_fragment"
-                        android:name="com.example.budgetmanagementapp.ExpenseFragment"
+                        android:name="com.example.git_budgetmanagementapp.ExpenseFragment"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         tools:layout="@layout/expense_fragment" />
