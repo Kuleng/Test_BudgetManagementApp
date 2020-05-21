@@ -1,0 +1,2 @@
+rootProject.name='Git_BudgetManagementApp'
+include ':app'
