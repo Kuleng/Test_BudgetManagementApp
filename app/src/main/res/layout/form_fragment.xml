@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FormFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <TextView
+            android:id="@+id/expense_name_text"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/expense_name"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/expense_cost_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/expense_type_text"
+            style="@style/TextStyle"
+            android:layout_width="94dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/expense_cost"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/add_expense_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expense_cost_text" />
+
+        <TextView
+            android:id="@+id/expense_cost_text"
+            style="@style/TextStyle"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/expense_type"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/expense_type_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expense_name_text" />
+
+        <EditText
+            android:id="@+id/expense_name_edit"
+            style="@style/EditStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:layout_constraintBaseline_toBaselineOf="@+id/expense_name_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/expense_name_text" />
+
+        <EditText
+            android:id="@+id/expense_type_edit"
+            style="@style/EditStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/type_food_rent_etc"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:layout_constraintBaseline_toBaselineOf="@+id/expense_cost_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/expense_cost_text" />
+
+        <EditText
+            android:id="@+id/expense_cost_edit"
+            style="@style/EditStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/cost"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:layout_constraintBaseline_toBaselineOf="@+id/expense_type_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toEndOf="@+id/expense_type_text" />
+
+        <Button
+            android:id="@+id/add_expense_btn"
+            style="@style/buttonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_expense"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.617" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

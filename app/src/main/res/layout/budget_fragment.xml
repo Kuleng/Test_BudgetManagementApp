@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BudgetFragment" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name_text"
+            style="@style/TextStyle"
+            android:layout_width="140dp"
+            android:layout_height="53dp"
+            android:gravity="center_horizontal"
+            android:text="Your name"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/your_name"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/name_edit"
+            style="@style/EditStyle"
+            android:layout_marginTop="64dp"
+            android:gravity="center_horizontal"
+            android:hint="@string/enter_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="invisible" />
+
+        <Button
+            android:id="@+id/name_button"
+            style="@style/buttonStyle"
+            android:layout_width="0dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/change_name"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_edit"
+            tools:visibility="invisible" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/name_barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="name_text,name_edit,name_button"
+            tools:layout_editor_absoluteX="395dp"
+            tools:layout_editor_absoluteY="731dp" />
+
+        <TextView
+            android:id="@+id/budget_text"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="0.0"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_barrier"
+            tools:text="@string/_0_0" />
+
+        <EditText
+            android:id="@+id/budget_edit"
+            style="@style/EditStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/enter_budget"
+            android:inputType="number|numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_barrier"
+            tools:visibility="invisible" />
+
+        <Button
+            android:id="@+id/budget_button"
+            style="@style/buttonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/change_budget"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/budget_edit"
+            tools:visibility="invisible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
